@@ -1,0 +1,190 @@
+/* Calendar wrapper */
+.calendar-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Calendar styles */
+.rbc-calendar {
+    min-height: 1100px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.rbc-month-view {
+    border: 0;
+
+    box-shadow: 0 10px 29px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.rbc-header {
+    background-color: #121212;
+    border: 0;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.rbc-header + .rbc-header {
+    border-left: 0;
+}
+
+.rbc-month-row,
+.rbc-week-row {
+    border-bottom: 1px solid #ddd;
+}
+
+.rbc-day-bg {
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+}
+
+.rbc-timeslot-group {
+    border-bottom: 1px solid #ddd;
+}
+
+.rbc-time-slot {
+    border-top: 1px solid #ddd;
+}
+
+.rbc-event {
+    background-color: #FFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 4px;
+    font-size: 11px;
+}
+
+.rbc-today {
+    background-color: #eaf6ff;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup h3 {
+    margin-top: 0;
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3174ad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-btn:hover {
+    background-color: #265c8a;
+}
+
+.rbc-toolbar {
+    margin-bottom:20px;
+}
+
+.rbc-toolbar button {
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 0;
+    box-shadow: unset;
+    font-weight: 600;
+    transition: 0.3s all;
+}
+
+.rbc-btn-group {
+    background: #f8f8f5;
+    border-radius: 15px;
+    padding: 6px;
+    display: flex;
+}
+
+.rbc-toolbar .rbc-btn-group:nth-child(1) button:nth-child(1) {
+    background: #9773dc;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 16px;
+}
+
+
+.rbc-toolbar button:hover, .rbc-toolbar button:active, .rbc-toolbar button:focus, .rbc-toolbar button.rbc-active {/* today btn contrast */
+    background-color: #fff;
+    border-radius: 10px !important;
+    font-weight: 900;
+    box-shadow: none;
+}
+
+span.rbc-toolbar-label {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+.rbc-day-bg + .rbc-day-bg, .rbc-month-row, .rbc-week-row, .rbc-month-row + .rbc-month-row, .rbc-day-bg{
+    border: 0;
+}
+
+.rbc-month-row .rbc-day-bg {
+    border-radius: 10px;
+    margin: 8px 6px;
+    background-color: #f5f6f8;
+    transition: 0.3s all;
+}
+
+.rbc-month-row .rbc-day-bg.rbc-today{
+    border-radius: 10px;
+    margin: 8px 6px;
+    background: #c1a8f2;
+    transition: 0.3s all;
+}
+
+
+button.rbc-button-link {
+    background: black;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 12px;
+    margin: 20px 15px 0;
+}
+
+.rbc-row-segment {
+    padding: 3px 15px;
+}
+
+button.rbc-button-link.rbc-show-more {
+    width: fit-content;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 5px 10px;
+    margin: 0 auto;
+    background: #9773dc;
+}

@@ -1,0 +1,142 @@
+/* EventsComponent.css */
+
+.courses h2 {
+    margin-bottom: 10px;
+}
+
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+    max-height: calc(8.5 * 44px); /* Assuming each row is 44px high */
+    display: block;
+    overflow-y: auto; /* Add vertical scrollbar if more than 7 rows */
+}
+
+.courses-table thead, .courses-table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.courses-table th, .courses-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.courses-table th {
+    border: 5px solid #fff;
+    border-radius: 16px;
+    background: #121212;
+    color: #fff;
+}
+
+.courses-table tr td:nth-child(1) {
+    font-weight: 800;
+}
+
+
+
+.courses-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.Newevent-btn {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.Newevent-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.Newevent-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px #0056b3; /* Add a blue border on focus */
+}
+
+.Newevent-btn:active {
+    background-color: #004d99; /* Darker blue when button is clicked */
+}
+
+.courses-table td .remove-btn {
+    background-color: #ff8d86;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    border-bottom: 3px solid #0000001c;
+}
+
+.courses-table td .remove-btn:hover {
+    background-color: #f2433a; /* Darker red on hover */
+    color: #fff;
+}
+
+.courses-table td .remove-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.5); /* Add a red border on focus */
+}
+
+.courses-table td .remove-btn:active {
+    background-color: #bd2130; /* Darker red when button is clicked */
+}
+
+/* Conditional row colors based on importance level */
+.courses-table .high-importance {
+    border-left: 6px solid #fea9a9;
+}
+
+.courses-table .medium-importance {
+    border-left: 6px solid #ffdc6e;
+}
+
+.courses-table .low-importance {
+    border-left: 6px solid #bddc97;
+}
+
+.courses-table tr {
+    background-clip: padding-box;
+}
+
+.courses-table tr:hover {
+    background-color: #9773dc1a !important;
+}
+
+/* Custom scrollbar styles for .courses-table */
+.courses-table::-webkit-scrollbar {
+    width: 30px;
+    background: transparent;
+}
+
+.courses-table::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+.courses-table::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 20px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+.courses-table::-webkit-scrollbar-thumb:hover {
+    background: #9773dc;
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+

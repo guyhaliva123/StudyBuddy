@@ -1,0 +1,155 @@
+/* General Event Post Styling */
+.event-post {
+    padding: 1rem;
+}
+
+/* Carousel container */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Slide container within the carousel */
+.carousel-slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Wrapper for the slides, allows horizontal scrolling */
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Card container */
+.event-card {
+    background: #fff; /* White background for the card */
+    background: linear-gradient(0deg, rgba(239,238,250,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 10px;
+    flex: 1 0 calc(33.333% - 20px); /* Fit 3 cards in the carousel, accounting for margin */
+    max-width: calc(33.333% - 20px); /* Ensure each card does not exceed its calculated width */
+    text-align: center; /* Align text to the left */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin-top: 0;
+        font-family: "Varela Round", sans-serif;
+        font-size: 1.25rem; /* Larger font size for header */
+        color: #333; /* Darker text color */
+        font-weight: bold;
+    }
+    p {
+        margin-bottom: 30px; /* Spacing between paragraphs */
+        color: #555; /* Lighter text color */
+    }
+
+    img {
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        width: 100% !important;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .time-title{
+        color: #9176d8;
+        font-weight: bold;
+        text-align: left;
+        font-size: 12px;
+        margin: 0;
+        line-height: 8px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .button-container {
+        display: flex; /* Align buttons in a row */
+        justify-content: center; /* Distribute space between buttons */
+        margin-top: auto; /* Space above the button container */
+    }
+    button {
+        background-color: #007bff; /* Primary button color */
+        color: #fff; /* Text color for buttons */
+        border: none;
+        border-radius: 5px; /* Rounded corners for buttons */
+        padding: 10px 15px; /* Padding for buttons */
+        font-size: 1rem; /* Font size for buttons */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        margin: 0 5px; /* Space between buttons */
+    }
+    button:hover {
+        background-color: #0056b3; /* Darker color on hover */
+    }
+}
+
+
+/* Button container */
+
+/* Style for "Edit Post" button */
+
+/* Style for "Remove Post" button */
+.event-card button.remove {
+    background-color: #f44336; /* Red color for Remove Post button */
+    font-weight: bold;
+}
+
+.event-card button.remove:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Carousel control buttons */
+.carousel-control {
+    background-color: rgb(183 159 250);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: 0 5px;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s all;
+    opacity: 0.7;
+
+
+}
+
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    opacity: 1;
+    transition: 0.4s all;
+
+}
+
+i.fa-solid.fa-angle-right, 
+i.fa-solid.fa-angle-left {
+    transition: 0.4s all;
+    transform: rotate(0deg);
+
+}
+.carousel-control:hover > i.fa-solid.fa-angle-right, 
+.carousel-control:hover > i.fa-solid.fa-angle-left {
+    transition: 0.4s all;
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+

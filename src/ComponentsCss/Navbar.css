@@ -1,0 +1,53 @@
+.navbar {
+    background: #9d9d9d26;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-buttons .nav-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s all;
+    border-bottom: 0;
+    text-align: left;
+    margin-top: 25px;
+    width: 100%;
+    background: #00000038;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.navbar-buttons .nav-btn:nth-child(1) {
+    margin-top: 0;
+}
+
+.navbar-buttons .nav-btn:hover {
+    color:#9773dc;
+    transition: 0.3s all;
+    
+}
+
+.profile-img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+

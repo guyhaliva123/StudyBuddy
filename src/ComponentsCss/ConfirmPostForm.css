@@ -1,0 +1,112 @@
+/* ConfirmationDialog.css */
+
+/* Modal overlay styles */
+.confirmation-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: opacity 0.5s ease-out; /* Smooth transition for fade-out */
+}
+
+.confirmation-dialog.fade-out {
+    opacity: 0; /* Fade-out effect */
+}
+
+/* Modal content styles */
+.confirmation-dialog-content {
+    margin: 10% auto;
+    position: absolute;
+    left: 19%;
+    padding: 25px;
+    width: 650px;
+    box-shadow: 0 14px 70px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    background: #fff;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: fadeInAnimation ease 1s;
+    transition: transform 0.5s ease-out; /* Smooth transition for scale effect */
+}
+
+
+.confirmation-dialog-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px; /* Slightly larger font size */
+    color: #2c2c2c; /* Darker text color for better readability */
+}
+
+.confirmation-dialog-content form label {
+    display: block;
+    margin-bottom: 15px;
+    color: black; /* Darker text for labels */
+    width: 100%;
+    font-weight: 600;
+}
+
+.confirmation-dialog-content form label input,
+.confirmation-dialog-content form label select,
+.confirmation-dialog-content form label textarea {
+    width: 100%;
+    padding: 15px;
+    box-shadow: none;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 8px;
+    background: #f5f6f8;
+    color: black;
+}
+
+.confirmation-dialog-content form label select {
+    padding: 17px 15px;
+}
+
+/* Error message styling */
+.error {
+    color: #f44336; /* Red color for error messages */
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Modal buttons container */
+.dialog-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+
+/* Style for Save Changes and Cancel buttons */
+.dialog-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dialog-actions button:first-child {
+    background-color: #bd9cfd; /* Green color for Save Changes */
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.dialog-actions button:first-child:hover {
+    background-color: #bd9cfd; /* Darker green on hover */
+}
+
+.dialog-actions button:nth-of-type(2) {
+    background-color: #f44336; /* Red color for Cancel */
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.dialog-actions button:nth-of-type(2):hover {
+    background-color: #e53935; /* Darker red on hover */
+}

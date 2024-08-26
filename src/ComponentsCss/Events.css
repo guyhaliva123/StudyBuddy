@@ -1,0 +1,213 @@
+/* EventsComponent.css */
+
+.events h2 {
+    margin-bottom: 10px;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+    max-height: calc(8.5 * 44px); /* Assuming each row is 44px high */
+    display: block;
+    overflow-y: auto; /* Add vertical scrollbar if more than 7 rows */
+}
+
+.events-table thead, .events-table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.events-table th, .events-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.events-table th {
+    border: 5px solid #fff;
+    border-radius: 16px;
+    background: #121212;
+    color: #fff;
+}
+
+.events-table tr td:nth-child(1) {
+    font-weight: 800;
+}
+
+.events-table td button, .courses-table td button, .event-card button.edit, .modal-buttons button:first-child, .dialog-actions button:first-child {
+    width: 45%;
+    height: 44px;
+    background-color: #bd9cfd;
+    color: black;
+    font-weight: 900;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 5px;
+    box-shadow: none;
+    font-size: 12px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    border-bottom: 3px solid #0000001c;
+}
+
+.events-table td button:hover, .courses-table td button:hover, .event-card button.edit:hover {
+    background-color: #9773dc; /* Darker blue on hover */
+    color: #fff;
+    transition: 0.2s all;
+}
+
+.events-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.Newevent-btn {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 12px; /* Font size */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.Newevent-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.Newevent-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px #0056b3; /* Add a blue border on focus */
+}
+
+.Newevent-btn:active {
+    background-color: #004d99; /* Darker blue when button is clicked */
+}
+
+.events-table td .remove-btn, .event-card button.remove, .modal-buttons button:last-child, .dialog-actions button:nth-of-type(2) {
+    background-color: #ff8d86;
+    color: black;
+    border: none;
+    font-weight: BOLD;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    border-bottom: 3px solid #0000001c;
+}
+
+.events-table td .remove-btn:hover {
+    background-color: #f2433a; /* Darker red on hover */
+    color: #fff;
+}
+
+.events-table td .remove-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.5); /* Add a red border on focus */
+}
+
+.events-table td .remove-btn:active {
+    background-color: #ca414f; /* Darker red when button is clicked */
+}
+
+/* Conditional row colors based on importance level */
+.events-table .high-importance {
+    border-left: 15px solid #f04a4a;
+}
+
+.events-table .medium-importance {
+    border-left: 15px solid #f1ba41;
+}
+
+.events-table .low-importance {
+    border-left: 15px solid #f7f322;
+}
+
+.events-table tr {
+    background-clip: padding-box;
+}
+
+.events-table tr:hover {
+    background-color: #9773dc1a !important;
+}
+
+/* Custom scrollbar styles for .events-table */
+.events-table::-webkit-scrollbar {
+    width: 30px;
+    background: transparent;
+}
+
+.events-table::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+.events-table::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 20px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+.events-table::-webkit-scrollbar-thumb:hover {
+    background: #9773dc;
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 12px;
+}
+
+.modal-btn:hover {
+    background-color: #45a049;
+}
+
+.modal-btn:nth-child(2) {
+    background-color: #f44336;
+}
+
+.modal-btn:nth-child(2):hover {
+    background-color: #e53935;
+}

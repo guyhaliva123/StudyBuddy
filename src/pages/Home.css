@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("images/Background.png");
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: 'Varela Round' !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    color: #2c2c2c !important;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Varela Round' !important;
+    font-size: 21px !important;
+    margin-top: -14px !important;
+    color: #2c2c2c !important;
+    text-align: center;
+
+}
+
+  .main_logo {
+    margin:0 0 60px;
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+  
+.homepage {
+    background: #000000d4;
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    box-shadow: 0 15px 60px #00000063;
+    padding:0.5em;
+}
+
+.container {
+    display: flex; 
+    max-width: 100% !important;
+}
+
+.main-content {
+    width: 100%;
+    padding: 3em;
+    background:#fff;
+    margin-left: 1em;
+    border-radius: 20px;
+    height: 85vh;
+    overflow-y: scroll;
+    
+}
+
+.main-content::-webkit-scrollbar {
+    width: 30px;
+    background: transparent;
+
+  }
+  
+  .main-content::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+
+  }
+  
+  .main-content::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 20px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+  
+
+  }
+  
+  .main-content::-webkit-scrollbar-thumb:hover {
+    background: #9773dc;
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+
+
+  }
+
+.events-section{
+    margin-top: 3em;
+}
+
+.calendar-container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*** RESPONSIVE ***/
+
+@media only screen and (max-width: 1920px) {
+
+}
+
+input#Notification {
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

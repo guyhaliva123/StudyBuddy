@@ -1,0 +1,18 @@
+# this file 
+version: '3'
+services:
+  web:
+    # . means that the build file is in the current dierectory.
+    # by writing . in the build line we are tarrgeting the Dockerfile in the dierectory.
+    build: .
+    ports:
+      # "port in local machine":"port in the container"
+      - "5000:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - firebase_config
+    volumes:
+      # keep the image in sync with changes made in the code
+      # thet way every time we make changes on the code it will refresh the image
+      # and keep it updated with the code insted of building the image every time we make changes in the code.
+      - .:/Backend
